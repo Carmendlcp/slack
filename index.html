@@ -9,13 +9,12 @@
   <body>
     <header>
       <div class="nav">
-        <div class="logo">
-          <a href="https://slack.com/intl/es-es"
-            ><img src="./Imagenes/logo slack.png"
-          /></a>
-        </div>
-        <div class="barra_nav">
-          <input type="checkbox" />
+          <a class="logo" href="https://slack.com/intl/es-es"><img class=logo src="./Imagenes/logo slack.png"/></a>
+          <input type="checkbox" id="menu-check">
+          <label id="menu" for="menu-check">
+            <span id="menu-abrir"> &#9776; </span>
+            <span id="menu-cerrar">X</span>
+          </label>
           <nav>
             <ul>
               <li>Funciones</li>
@@ -26,14 +25,13 @@
             </ul>
           </nav>
         </div>
-      </div>
     </header>
     <main>
         <section class="registrarse">
             <h1 class="blanco">Pensado para las personas. <span class="naranja"> Creado para la productividad</span></h1>
             <p>Conecta con las personas adecuadas, encuentra lo que necesitas y automatiza todo lo demás. Así es como se trabaja en Slack, tu plataforma de productividad.</p>
-            <button name="correo" type="button" >REGISTRARSE CON CORREO</button>
-            <button name="google" type="button"><img src="./Imagenes/logo goolge.png"/>REGISTRARSE CON GOOGLE</button>
+            <button class="correo" type="button" >REGISTRARSE CON CORREO</button>
+            <button class="google" type="button"><img class="imgg" src="./Imagenes/logo goolge.png"/>REGISTRARSE CON GOOGLE</button>
         </section>
     </main>
   </body>

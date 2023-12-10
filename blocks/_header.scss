@@ -1,21 +1,93 @@
 
 .nav{
-    width: 100%;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #531253
 }
 
-
-ul{
-    display: flex;
-    list-style: none;
-    font-family: "Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
+img{
+    width: 8em;
 }
 
-li{
+
+#menu{
+    display: block;
+    color: white;
+    font-size: 1.2em;
     font-weight: bolder;
-    margin-right: 30px;
-    color:white;
+}
+
+#menu-check{
+    display: none;
+}
+
+#menu-cerrar{
+    display: none;
+}
+
+#menu-check:not(:checked) ~ nav {
+    display: none;
+
+}
+
+#menu-check:checked ~ nav {
+    display: block;
+}
+
+#menu-check:checked ~ label #menu-abrir{
+    display: none;
+}
+
+#menu-check:checked ~ label #menu-cerrar{
+    display: block;
+}
+
+ul{
+    list-style: none;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Helvetica Neue",Helvetica,"Segoe UI",Tahoma,Arial,sans-serif;
+    
+    li{
+        margin-right: 5px;
+        color:white;
+        font-weight: bolder;
+    }
+}
+
+h1{
+    padding-top: 2em;
+}
+
+p{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+button {
+   height: 3em;
+}
+
+.correo{
+    font-weight: bolder;
+    color: #531253;
+    background-color: white;
+}
+
+.imgg{
+    width: 2em;
+    float: left;
+    margin-top: 0.2em;
+    margin-left: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+.google{
+    font-weight: bolder;
+    color: white;
+    background-color: #3b3bf5;
+
 }
